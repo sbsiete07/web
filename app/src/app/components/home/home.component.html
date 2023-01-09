@@ -1,18 +1,30 @@
 <div class="container">
     <div class="sidebar">
-        <div class="image">'Imagen'</div>
+        <div class="image">
+            <h1>'Imagen'</h1>
+        </div>
         <ul class="elements">
-            <li>Home</li>
-            <li>Projects</li>
-            <li>About me</li>
-            <li>Contact</li>
+            <li class="element" [routerLink]="">Home</li>
+            <li class="element" [routerLink]="">Projects</li>
+            <li class="element" [routerLink]="">About me</li>
+            <li class="element" [routerLink]="">Contact</li>
         </ul>
     </div>
     <div class="web-content">
         <div class="container">
-            <div class="main">'Web content'</div>
+            <div class="projects-slider">
+                <img class="slider-image" src="{{getSlide()}}" alt="slide" >
+                <div class="tittle-slider">
+                    <h1>Titulo</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio cupiditate accusamus alias culpa minima, natus quia incidunt aut dolore ex?</p>
+                </div>
+                <a class="buttons-right" (click)="getNext()">></a>
+                <a class="buttons-left" (click)="getPrev()"><</a>
+
+            </div>
+
+        </div>
     </div>
-</div>
 
 <!--
 
