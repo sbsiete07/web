@@ -1,39 +1,28 @@
 <div class="container">
-    <div class="sidebar">
-        <div class="image">
-            <h1>'Imagen'</h1>
-        </div>
-        <ul class="elements">
-            <li class="element" [routerLink]="">Home</li>
-            <li class="element" [routerLink]="">Projects</li>
-            <li class="element" [routerLink]="">About me</li>
-            <li class="element" [routerLink]="">Contact</li>
-        </ul>
+  <div class="sidebar">
+    <div class="image">
+      <h1>'Imagen'</h1>
     </div>
-    <div class="web-content">
-        <div class="container">
-            <div class="projects-slider">
-                <img class="slider-image" src="{{getSlide()}}" alt="slide" >
-                <div class="tittle-slider">
-                    <h1>Titulo</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio cupiditate accusamus alias culpa minima, natus quia incidunt aut dolore ex?</p>
-                </div>
-                <a class="buttons-right" (click)="getNext()">></a>
-                <a class="buttons-left" (click)="getPrev()"><</a>
-
-            </div>
-
+    <ul class="elements">
+      <li class="element" [routerLink]="">Home</li>
+      <li class="element" [routerLink]="">Projects</li>
+      <li class="element" [routerLink]="">About me</li>
+      <li class="element" [routerLink]="">Contact</li>
+    </ul>
+  </div>
+  <div class="web-content">
+    <div class="container">
+      <div class="projects-slider">
+        <img class="slider-image" src="{{ getSlide() }}" alt="slide" />
+        <div class="tittle-slider">
+          <h1>{{ slider[i].titulo }}</h1>
+          <p>
+            {{ slider[i].descripcion }}
+          </p>
         </div>
+        <a class="buttons-right" (click)="getNext()">></a>
+        <a class="buttons-left" (click)="getPrev()"><</a>
+      </div>
     </div>
-
-<!--
-
-// Colores de paleta
-
-#005227
-#038554
-#03bb85
-#68ddbd
-#a4fff7
-
--->
+  </div>
+</div>
