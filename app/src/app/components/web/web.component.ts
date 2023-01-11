@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { Project } from 'src/app/models/project';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  selector: 'app-web',
+  templateUrl: './web.component.html',
+  styleUrls: ['./web.component.css']
 })
-export class HomeComponent {
+export class WebComponent {
+
   constructor() {}
   ngOnInit(): void {}
 
