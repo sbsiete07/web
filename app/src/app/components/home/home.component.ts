@@ -16,19 +16,19 @@ export class HomeComponent {
       nombre: 'ac',
       imagen: '../../../assets/ac.jpg',
       titulo: "Assassin's Creed",
-      descripcion: 'Projecto sobre mi saga favorita de juegos',
+      descripcion: 'Proyecto sobre mi saga favorita de juegos',
     },
     {
       nombre: 'zelda',
       imagen: '../../../assets/zelda.jpg',
       titulo: 'The Legend of Zelda',
-      descripcion: 'Projecto sobre mi segunda saga favorita de juegos',
+      descripcion: 'Proyecto sobre mi segunda saga favorita de juegos',
     },
     {
       nombre: 'mario',
       imagen: '../../../assets/mario.jpg',
       titulo: 'Super Mario Galaxy',
-      descripcion: 'Projecto sobre mi videojuego de Mario favorito',
+      descripcion: 'Proyecto sobre mi videojuego de Mario favorito',
     },
   ];
 

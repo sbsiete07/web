@@ -1,22 +1,30 @@
 <div class="grid-container">
-    <div class="sidebar">
-      <div class="imagen">'Imagen'</div>
-      <ul>
-        <li>Home</li>
-        <li>Projects</li>
-        <li>About me</li>
-        <li>Contact</li>
-      </ul>
+  <div class="sidebar">
+    <div class="imagen">'Imagen'</div>
+    <ul>
+      <li>Home</li>
+      <li>Projects</li>
+      <li>About me</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+  <div class="web-content">
+    <div class="slider">
+      <h1>Proyectos</h1>
+      <div class="slider-container">
+        <div class="slider-headers">
+          <div class="button-left" (click)="getPrev()"><</div>
+          <div class="button-right" (click)="getNext()">></div>
+          <div class="sombra-headers">
+            <h1>{{ slider[i].titulo }}</h1>
+            <p>{{ slider[i].descripcion }}</p>
+          </div>
+          <img src="{{ getSlide() }}" alt="slides" />
+        </div>
+      </div>
     </div>
-    <div class="web-content">
-      <div class="slider">Slider</div>
-      <div class="slider">Slider</div>
-      <div class="slider">Slider</div>
-      <div class="slider">Slider</div>
-      <div class="slider">Slider</div>
-      <div class="slider">Slider</div>
-      <div class="slider">Slider</div>
-      <div class="slider">Slider</div>
-      <div class="slider">Slider</div>
+    <div class="aboutme">
+      <!-- Introducir div con about me -->
     </div>
+  </div>
 </div>

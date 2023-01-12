@@ -1,18 +1,4 @@
-<div class="container">
-  <div class="sidebar">
-    <div class="image">
-      <h1>'Imagen'</h1>
-    </div>
-    <ul class="elements">
-      <li class="element" [routerLink]="">Home</li>
-      <li class="element" [routerLink]="">Projects</li>
-      <li class="element" [routerLink]="">About me</li>
-      <li class="element" [routerLink]="">Contact</li>
-    </ul>
-  </div>
-  <div class="web-content">
-    
-    <div class="container">
+
       <div class="projects-slider">
         <div class="tittle"><h1 class="slider-header">Projectos</h1></div>
         <img class="slider-image" src="{{ getSlide() }}" alt="slide" />
@@ -23,8 +9,4 @@
         <a class="buttons-right" (click)="getNext()">></a>
         <a class="buttons-left" (click)="getPrev()"><</a>
         <!-- A esta altura se añaden los divs nuevos para scrollear-->
-        <div class="aboutme">asd</div>
       </div>
-    </div>
-  </div>
-</div>
