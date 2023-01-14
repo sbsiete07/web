@@ -68,7 +68,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding: 0 !important;
-  margin: 15px 0px;
+  margin: .5vh 0vh;
   font-size: 1vw;
 }
 
@@ -142,6 +142,7 @@ body {
   width: 100%;
   height: 35%;
   bottom: 0;
+  padding: 20px;
 }
 
 .sombra-headers > h1 {
@@ -151,7 +152,7 @@ body {
 }
 
 .sombra-headers > p {
-  font-size: 1rem;
+  font-size: .7vw;
   padding: 0px 25px;
 }
 
@@ -229,10 +230,21 @@ body {
 
 .web-content div h1 {
   font-size: 3.5vh;
-  transition: all 1s;
+  transition: all ease-in-out .3s;
 }
+.web-content div h1:after{
+  transition: all ease-in-out .3s;
+    background: none repeat scroll 0 0 rgb(100, 255, 113);
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+}
+.web-content div h1:hover:after {
+  width: 100%;
+}
+
 .web-content div h1:hover {
-  font-size: 4vh;
   transition: all 0.9s;
   cursor: pointer;
 }
@@ -244,7 +256,7 @@ h4 {
 }
 
 .aboutme h1 {
-  text-align: right;
+  text-align: left;
 }
 
 .social {
@@ -273,3 +285,45 @@ h4 {
   filter: brightness(0) invert(1);
   width: 80%;
 }
+
+.aboutme-div{
+  width: 100%;
+  height: 100%;
+  font-size: 1vw;
+  
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.cards_item {
+  height: 150px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0vw 1vw;
+  background-color:  rgb(76, 0, 255);
+  border-radius: 5%;
+  transition: all ease-in-out .3s;
+  border: 1px solid transparent;
+
+}
+
+.cards_item img{
+  width: 100px;
+}
+
+.cards_item:hover{
+  transition: all ease-in-out .3s;
+  box-shadow: -1px 6px 20px -1px rgba(77,30,240);
+  -webkit-box-shadow: -1px 6px 20px -1px rgba(77,30,240);
+  -moz-box-shadow: -1px 6px 20px -1px rgba(77,30,240);
+  border: 1px solid white;
+  cursor: pointer;
+  transform: translateY(-20px);
+}
+
