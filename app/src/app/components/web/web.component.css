@@ -29,6 +29,7 @@ body {
   max-height: 99vh;
   position: sticky !important;
   top: 0px;
+  display: block;
 }
 
 .imagen img {
@@ -68,7 +69,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding: 0 !important;
-  margin: .5vh 0vh;
+  margin: 0.5vh 0vh;
   font-size: 1vw;
 }
 
@@ -89,7 +90,7 @@ body {
 
 .grid-container > .web-content {
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   flex-direction: column;
   height: 90vh;
@@ -104,7 +105,7 @@ body {
 }
 
 .web-content > div {
-  margin-bottom: 6vh;
+  margin-bottom: 20vh;
   width: 100%;
   height: auto;
   text-align: justify;
@@ -152,7 +153,7 @@ body {
 }
 
 .sombra-headers > p {
-  font-size: .7vw;
+  font-size: 0.7vw;
   padding: 0px 25px;
 }
 
@@ -230,18 +231,18 @@ body {
 
 .web-content div h1 {
   font-size: 3.5vh;
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out 0.3s;
 }
-.web-content div h1:after{
-  transition: all ease-in-out .3s;
-    background: none repeat scroll 0 0 rgb(100, 255, 113);
-    content: "";
-    display: block;
-    height: 1px;
-    width: 0;
+.web-content div h1:after {
+  transition: all ease-in-out 0.3s;
+  background: none repeat scroll 0 0 rgb(100, 255, 113);
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
 }
 .web-content div h1:hover:after {
-  width: 100%;
+  width: 95%;
 }
 
 .web-content div h1:hover {
@@ -286,44 +287,101 @@ h4 {
   width: 80%;
 }
 
-.aboutme-div{
+.aboutme-div {
   width: 100%;
   height: 100%;
   font-size: 1vw;
-  
 }
 
 .cards {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
+  gap: 1vw;
 }
 
 .cards_item {
-  height: 150px;
-  width: 400px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin: 0vw 1vw;
-  background-color:  rgb(76, 0, 255);
-  border-radius: 5%;
-  transition: all ease-in-out .3s;
-  border: 1px solid transparent;
 
+  background-color: rgb(76, 0, 255);
+  border-radius: 5%;
+  transition: all ease-in-out 0.3s;
+  border: 1px solid transparent;
 }
 
-.cards_item img{
+.cards_item img {
   width: 100px;
 }
 
-.cards_item:hover{
-  transition: all ease-in-out .3s;
-  box-shadow: -1px 6px 20px -1px rgba(77,30,240);
-  -webkit-box-shadow: -1px 6px 20px -1px rgba(77,30,240);
-  -moz-box-shadow: -1px 6px 20px -1px rgba(77,30,240);
+.cards_item:hover {
+  transition: all ease-in-out 0.3s;
+  box-shadow: -1px 6px 20px -1px rgba(77, 30, 240);
+  -webkit-box-shadow: -1px 6px 20px -1px rgba(77, 30, 240);
+  -moz-box-shadow: -1px 6px 20px -1px rgba(77, 30, 240);
   border: 1px solid white;
   cursor: pointer;
   transform: translateY(-20px);
+  background: linear-gradient(0deg, rgb(52, 23, 158) 0%, rgb(111, 72, 255) 25%);
+}
+
+@media only screen and (max-width : 425px) {
+  .sidebar{
+    visibility: hidden;
+  }
+  .grid-container{
+    grid-template-columns:0vw 100%
+  }
+}
+.web-content{
+  scroll-behavior: smooth
+}
+ 
+#scroll-button{
+  filter: brightness(1)invert(1);
+  width: 20px;
+  margin: 0px 10px;
+  transform: rotate(180deg);
+}
+
+.test{
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 80%;
+  right: 10px;
+  z-index: 1;
+  height: 12%;
+}
+
+#scroll-svg{
+  filter: brightness(1)invert(1);
+  width: 15px;
+  transform: rotate(90deg);
+}
+
+#scroll-p{
+  color: white;
+  font-size: 12px;
+}
+
+.test:hover:nth-child(1){
+  cursor: pointer;
+  animation: slide .7s ease-in-out forwards;
+}
+
+@keyframes slide {
+ 
+  0% {
+    margin: 0px 0px;    
+  }
+  100%{
+    margin: 10px 0px;
+  }
+
 }
 

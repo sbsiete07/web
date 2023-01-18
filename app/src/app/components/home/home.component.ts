@@ -8,47 +8,20 @@ import { Project } from 'src/app/models/project';
 })
 export class HomeComponent {
   constructor() {}
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getPokemon();
+  }
+  moves!:string;
+  pokemon!:any;
 
-  i = 0;
-  slider: Project[] = [
-    {
-      nombre: 'ac',
-      imagen: '../../../assets/ac.jpg',
-      titulo: "Assassin's Creed",
-      descripcion: 'Proyecto sobre mi saga favorita de juegos',
-    },
-    {
-      nombre: 'zelda',
-      imagen: '../../../assets/zelda.jpg',
-      titulo: 'The Legend of Zelda',
-      descripcion: 'Proyecto sobre mi segunda saga favorita de juegos',
-    },
-    {
-      nombre: 'mario',
-      imagen: '../../../assets/mario.jpg',
-      titulo: 'Super Mario Galaxy',
-      descripcion: 'Proyecto sobre mi videojuego de Mario favorito',
-    },
-  ];
-
-  getSlide() {
-    return this.slider[this.i].imagen;
+  getPokemon(){
+    fetch('https://pokeapi.co/api/v2/pokemon/mewtwo')
+    .then(response => response.json())
+    .then(data=> this.pokemon = data)
+    .catch(err=>{console.log(err)})
   }
 
-  getPrev() {
-    if (this.i > 0) {
-      this.i--;
-    } else {
-      this.i = this.slider.length - 1;
-    }
-  }
 
-  getNext() {
-    if (this.i < this.slider.length - 1) {
-      this.i++;
-    } else {
-      this.i = 0;
-    }
-  }
+
+
 }

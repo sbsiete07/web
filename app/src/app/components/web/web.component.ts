@@ -52,4 +52,9 @@ export class WebComponent {
       this.i = 0;
     }
   }
+
+  scroll(){
+    const doc = document.getElementById('web-id'); 
+    doc?.scrollBy(0,1080)
+  }
 }

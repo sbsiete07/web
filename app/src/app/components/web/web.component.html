@@ -1,7 +1,10 @@
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300;1,400&display=swap");
 </style>
-
+<div class="test" (click)="scroll()">
+    <p id="scroll-p">scroll down </p>
+    <img src="../../../assets/flecha-correcta.svg" alt="scroll" id="scroll-svg"/>
+</div>
 <div class="grid-container">
   <div class="sidebar">
     <div class="imagen">
@@ -15,7 +18,8 @@
       <li><img src="../../../assets/gmail.svg" alt="contact" /> Contact</li>
     </ul>
   </div>
-  <div class="web-content">
+  
+  <div class="web-content" id="web-id">
     <div class="slider">
       <h1>Proyectos</h1>
       <div class="slider-container">
@@ -34,25 +38,197 @@
         </div>
       </div>
     </div>
-    <div class="aboutme">
+    <div class="aboutme" id="aboutme">
       <h1>About me</h1>
       <div class="aboutme-div">
         <h3>Hey!</h3>
-        <p>Mi nombre es Ethan, soy un apasionado por las tecnologias, actualmente tengo 22 años y actualmente sigo mejorando mis habilidades en mi tiempo libre.</p>
-        <p>Soy una persona muy curiosa, ademas de programacion tambien me encanta la ciberseguridad, por lo que podreis ver tanto mis proyectos de programacion como mis posts de ciberseguridad y CaptueTheFlag</p>
-        <h3 style="padding:40px 40px 40px 0px">Actualmente puedo trabajar con las siguientes tecnologias:</h3>
+        <p>
+          Mi nombre es Ethan, soy un apasionado por las tecnologias, actualmente
+          tengo 22 años y actualmente sigo mejorando mis habilidades en mi
+          tiempo libre.
+        </p>
+        <p>
+          Soy una persona muy curiosa, ademas de programacion tambien me encanta
+          la ciberseguridad, por lo que podreis ver tanto mis proyectos de
+          programacion como mis posts de ciberseguridad y CaptueTheFlag
+        </p>
+        <h3 style="padding: 20px 20px 20px 0px">
+          Actualmente puedo trabajar con las siguientes tecnologias:
+        </h3>
         <div class="cards">
-          <div class="cards_item"><img src="../../../assets/icons/html5.svg" alt="html">HTML</div>
-          <div class="cards_item"><img src="../../../assets/icons/css3.svg" alt="css">CSS</div>
-          <div class="cards_item"><img src="../../../assets/icons/js.svg" alt="javascript">JAVASCRIPT</div>
-          <div class="cards_item"><img src="../../../assets/icons/java.svg" alt="java">JAVA</div>
-          <div class="cards_item"><img src="../../../assets/icons/mysql.svg" alt="mysql">MYSQL</div>
-          <div class="cards_item"><img src="../../../assets/icons/angular.png" alt="angular">ANGULAR</div>
-          <div class="cards_item"><img src="../../../assets/icons/python.svg" alt="python">PYTHON</div>
-          <div class="cards_item"><img src="../../../assets/icons/php.svg" alt="php">PHP</div> 
+          <div class="cards_item">
+            <img src="../../../assets/icons/html5.svg" alt="html" />HTML
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/css3.svg" alt="css" />CSS
+          </div>
+          <div class="cards_item">
+            <img
+              src="../../../assets/icons/js.svg"
+              alt="javascript"
+            />JAVASCRIPT
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/java.svg" alt="java" />JAVA
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/mysql.svg" alt="mysql" />MYSQL
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/angular.png" alt="angular" />ANGULAR
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/python.svg" alt="python" />PYTHON
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/php.svg" alt="php" />PHP
+          </div>
         </div>
       </div>
-      
+    </div>
+    <div class="aboutme" id="aboutme">
+      <h1>About me</h1>
+      <div class="aboutme-div">
+        <h3>Hey!</h3>
+        <p>
+          Mi nombre es Ethan, soy un apasionado por las tecnologias, actualmente
+          tengo 22 años y actualmente sigo mejorando mis habilidades en mi
+          tiempo libre.
+        </p>
+        <p>
+          Soy una persona muy curiosa, ademas de programacion tambien me encanta
+          la ciberseguridad, por lo que podreis ver tanto mis proyectos de
+          programacion como mis posts de ciberseguridad y CaptueTheFlag
+        </p>
+        <h3 style="padding: 20px 20px 20px 0px">
+          Actualmente puedo trabajar con las siguientes tecnologias:
+        </h3>
+        <div class="cards">
+          <div class="cards_item">
+            <img src="../../../assets/icons/html5.svg" alt="html" />HTML
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/css3.svg" alt="css" />CSS
+          </div>
+          <div class="cards_item">
+            <img
+              src="../../../assets/icons/js.svg"
+              alt="javascript"
+            />JAVASCRIPT
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/java.svg" alt="java" />JAVA
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/mysql.svg" alt="mysql" />MYSQL
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/angular.png" alt="angular" />ANGULAR
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/python.svg" alt="python" />PYTHON
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/php.svg" alt="php" />PHP
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aboutme" id="aboutme">
+      <h1>About me</h1>
+      <div class="aboutme-div">
+        <h3>Hey!</h3>
+        <p>
+          Mi nombre es Ethan, soy un apasionado por las tecnologias, actualmente
+          tengo 22 años y actualmente sigo mejorando mis habilidades en mi
+          tiempo libre.
+        </p>
+        <p>
+          Soy una persona muy curiosa, ademas de programacion tambien me encanta
+          la ciberseguridad, por lo que podreis ver tanto mis proyectos de
+          programacion como mis posts de ciberseguridad y CaptueTheFlag
+        </p>
+        <h3 style="padding: 20px 20px 20px 0px">
+          Actualmente puedo trabajar con las siguientes tecnologias:
+        </h3>
+        <div class="cards">
+          <div class="cards_item">
+            <img src="../../../assets/icons/html5.svg" alt="html" />HTML
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/css3.svg" alt="css" />CSS
+          </div>
+          <div class="cards_item">
+            <img
+              src="../../../assets/icons/js.svg"
+              alt="javascript"
+            />JAVASCRIPT
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/java.svg" alt="java" />JAVA
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/mysql.svg" alt="mysql" />MYSQL
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/angular.png" alt="angular" />ANGULAR
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/python.svg" alt="python" />PYTHON
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/php.svg" alt="php" />PHP
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aboutme" id="aboutme">
+      <h1>About me</h1>
+      <div class="aboutme-div">
+        <h3>Hey!</h3>
+        <p>
+          Mi nombre es Ethan, soy un apasionado por las tecnologias, actualmente
+          tengo 22 años y actualmente sigo mejorando mis habilidades en mi
+          tiempo libre.
+        </p>
+        <p>
+          Soy una persona muy curiosa, ademas de programacion tambien me encanta
+          la ciberseguridad, por lo que podreis ver tanto mis proyectos de
+          programacion como mis posts de ciberseguridad y CaptueTheFlag
+        </p>
+        <h3 style="padding: 20px 20px 20px 0px">
+          Actualmente puedo trabajar con las siguientes tecnologias:
+        </h3>
+        <div class="cards">
+          <div class="cards_item">
+            <img src="../../../assets/icons/html5.svg" alt="html" />HTML
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/css3.svg" alt="css" />CSS
+          </div>
+          <div class="cards_item">
+            <img
+              src="../../../assets/icons/js.svg"
+              alt="javascript"
+            />JAVASCRIPT
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/java.svg" alt="java" />JAVA
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/mysql.svg" alt="mysql" />MYSQL
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/angular.png" alt="angular" />ANGULAR
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/python.svg" alt="python" />PYTHON
+          </div>
+          <div class="cards_item">
+            <img src="../../../assets/icons/php.svg" alt="php" />PHP
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
